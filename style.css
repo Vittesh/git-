@@ -1,0 +1,130 @@
+body{
+	background-image: url(images/back.jpg);
+	
+	
+}
+h1{
+	text-shadow: 5px 5px 5px yellow;
+	text-align: center;
+	color: blue;
+	font-size:8vw;
+	}
+.button{
+	background-color:blue;
+	height: 60px;
+	width: 150px;
+	text-align: center;
+	/*margin-top: auto;
+*/	font-size: 40px;
+	padding: auto;
+	margin: auto;
+	/*border-style: solid;*/
+	border-radius:8px;
+	border-width: 4px;
+	border-color:red;
+	margin-top:40px ;
+	color: lightgreen;
+}
+.button:hover{
+	background-image: url(images/back.jpg);
+	color:  blue;
+	cursor: pointer;
+	border: solid;
+	border-radius: 8px;
+	text-shadow: 5px 5px 5px GREEN;
+}
+.Scroll{
+	padding-right: 6vw;
+	padding-top: 0;
+
+	padding-left: 6vw;
+	
+	display: none;
+	height: 100%;
+	width: 100%;
+	/*z-index: 10;*/
+	font-size: 6vw;
+	color: blue;
+	text-align: center;
+	background-image: url(images/back2.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*padding :6vw;*/
+	/*display: block;*/
+	}
+
+.home:hover{
+	border: solid;
+	border-width: 5px;
+	border-color: blue;
+	border-radius: 5px;
+	width: auto;
+	background-image: url(images/back2.jpg);
+	color:blue;
+	animation-name: shake;
+	animation-duration: .5s;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-out;
+	font-style: italic;
+	cursor: pointer;
+}
+/*.about:hover{
+	background-color: blue;
+	color: lightgreen;
+	animation-name: shake;
+	animation-duration: .5s;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-out;
+	font-style: italic;
+	cursor: pointer;
+}
+.contact:hover{
+	background-color: blue;
+	color: lightgreen;
+	animation-name: shake;
+	animation-duration: .5s;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-out;
+	font-style: italic;
+	cursor: pointer;}*/
+@keyframes shake{
+	0%{transform: translateX(0px);}
+	25%{transform: translateX(20px);}
+	50%{transform: translateX(0px);}
+	75%{transform: translateX(-20px);}
+	100%{transform: translateX(0px);}
+}
+
+#cloose{
+	height: 4vw;
+	width: 4vw;
+	margin-left: 91%;
+	opacity: 0.25;
+	/*margin-right: 3%;
+	margin-top: 3%;*/}
+#cloose:hover{
+	opacity: 1;
+	cursor: pointer;
+	animation-name: rot;
+	animation-duration: .1s;
+	animation-iteration-count: 1;
+	
+	}
+.close{
+	margin-top: 2%;
+	margin-right: 2%;
+}
+.home{
+	background: blue;
+	color: lightgreen;
+	margin: 10px;
+}
+@keyframes rot{
+	0%{transform: rotate(0deg);}
+	20%{transform: rotate(18deg);}
+	40%{transform: rotate(36deg);}
+	60%{transform: rotate(54deg);}
+	80%{transform: rotate(72deg);}
+	100%{transform: rotate(90deg);}
+}
